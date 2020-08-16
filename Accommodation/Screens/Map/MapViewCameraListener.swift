@@ -13,8 +13,8 @@ class MapViewCameraListener: NSObject, YMKMapCameraListener {
   
   var closure: Callback?
   
-  convenience init(closure: @escaping Callback) {
-    self.init()
+  init(closure: @escaping Callback) {
+    super.init()
     self.closure = closure
   }
   

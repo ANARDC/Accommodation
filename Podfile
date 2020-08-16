@@ -13,7 +13,6 @@ target 'Accommodation' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'RxGesture'
   
   pod 'RealmSwift'
   pod 'Unrealm'
