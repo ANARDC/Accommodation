@@ -9,17 +9,27 @@
 import SnapKit
 
 class MapViewController: UIViewController {
-  var mapView: MapView?
+  var mapView              : MapView?
+  var centerPointImageView : UIImageView?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.makeMapView()
+    self.makeCenterPointImageView()
   }
   
   func makeMapView() {
     self.mapView = MapView(superview: self.view) { mapView in
       mapView.snp.makeConstraints { $0.edges.equalToSuperview() }
+    }
+  }
+  
+  func makeCenterPointImageView() {
+    guard let mapView = self.mapView else { return }
+    
+    self.centerPointImageView = CenterPointImageView(superview: mapView) { imageView in
+      imageView.snp.makeConstraints { $0.center.equalToSuperview() }
     }
   }
 }
