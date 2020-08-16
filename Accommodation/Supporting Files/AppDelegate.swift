@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import YandexMapKit
+
+let YMK_API_KEY = "472898d6-6600-4e6f-94de-c5d2f4918016"
+let YANDEX_GEOCODER_KEY = "0f442c41-f3dd-4e74-a39d-3314abfea6f2"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    YMKMapKit.setApiKey(YMK_API_KEY)
+    
     return true
   }
 

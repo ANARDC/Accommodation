@@ -3,24 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		58F3DFB753CC32A03A6E28D6 /* Pods_Accommodation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37EC70892239217CEA39D20 /* Pods_Accommodation.framework */; };
+		9936F9CB24E72FD300306DE2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936F9CA24E72FD300306DE2 /* MapView.swift */; };
+		9936F9CD24E8378200306DE2 /* YandexGeoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936F9CC24E8378200306DE2 /* YandexGeoResponse.swift */; };
+		9936F9CF24E8A4CC00306DE2 /* MapViewCameraListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936F9CE24E8A4CC00306DE2 /* MapViewCameraListener.swift */; };
+		9936F9D124E8B17F00306DE2 /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936F9D024E8B17F00306DE2 /* Geocoder.swift */; };
 		997887A624E5B37700EBD2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997887A524E5B37700EBD2B3 /* AppDelegate.swift */; };
 		997887A824E5B37700EBD2B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997887A724E5B37700EBD2B3 /* SceneDelegate.swift */; };
-		997887AA24E5B37700EBD2B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997887A924E5B37700EBD2B3 /* ViewController.swift */; };
+		997887AA24E5B37700EBD2B3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997887A924E5B37700EBD2B3 /* MapViewController.swift */; };
 		997887AF24E5B37A00EBD2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997887AE24E5B37A00EBD2B3 /* Assets.xcassets */; };
 		997887B224E5B37A00EBD2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997887B024E5B37A00EBD2B3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		020B97BCDFE34FA56A1E4EFC /* Pods-Accommodation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accommodation.debug.xcconfig"; path = "Target Support Files/Pods-Accommodation/Pods-Accommodation.debug.xcconfig"; sourceTree = "<group>"; };
+		9936F9CA24E72FD300306DE2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9936F9CC24E8378200306DE2 /* YandexGeoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexGeoResponse.swift; sourceTree = "<group>"; };
+		9936F9CE24E8A4CC00306DE2 /* MapViewCameraListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCameraListener.swift; sourceTree = "<group>"; };
+		9936F9D024E8B17F00306DE2 /* Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 		997887A224E5B37700EBD2B3 /* Accommodation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accommodation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997887A524E5B37700EBD2B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		997887A724E5B37700EBD2B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		997887A924E5B37700EBD2B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		997887A924E5B37700EBD2B3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		997887AE24E5B37A00EBD2B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		997887B124E5B37A00EBD2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		997887B324E5B37A00EBD2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +54,6 @@
 				020B97BCDFE34FA56A1E4EFC /* Pods-Accommodation.debug.xcconfig */,
 				A0C494E3070F59D09C0F786D /* Pods-Accommodation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,7 @@
 		997887BB24E5B61400EBD2B3 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				9936F9CC24E8378200306DE2 /* YandexGeoResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 		997887BC24E5B61F00EBD2B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9936F9D024E8B17F00306DE2 /* Geocoder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -116,9 +125,19 @@
 		997887BD24E5B62C00EBD2B3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				997887A924E5B37700EBD2B3 /* ViewController.swift */,
+				997887BE24E6EAA800EBD2B3 /* Map */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		997887BE24E6EAA800EBD2B3 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				997887A924E5B37700EBD2B3 /* MapViewController.swift */,
+				9936F9CA24E72FD300306DE2 /* MapView.swift */,
+				9936F9CE24E8A4CC00306DE2 /* MapViewCameraListener.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		E19DAED7E98E2F1B7838BC3D /* Frameworks */ = {
@@ -261,7 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				997887AA24E5B37700EBD2B3 /* ViewController.swift in Sources */,
+				9936F9CF24E8A4CC00306DE2 /* MapViewCameraListener.swift in Sources */,
+				9936F9D124E8B17F00306DE2 /* Geocoder.swift in Sources */,
+				997887AA24E5B37700EBD2B3 /* MapViewController.swift in Sources */,
+				9936F9CD24E8378200306DE2 /* YandexGeoResponse.swift in Sources */,
+				9936F9CB24E72FD300306DE2 /* MapView.swift in Sources */,
 				997887A624E5B37700EBD2B3 /* AppDelegate.swift in Sources */,
 				997887A824E5B37700EBD2B3 /* SceneDelegate.swift in Sources */,
 			);
