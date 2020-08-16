@@ -1,5 +1,5 @@
 //
-//  CenterPointImageView.swift
+//  MapCenterPointImageView.swift
 //  Accommodation
 //
 //  Created by Anar on 16.08.2020.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class CenterPointImageView: UIImageView {
-  convenience init(superview: UIView, constraints: (CenterPointImageView) -> ()) {
+class MapCenterPointImageView: UIImageView {
+  convenience init(superview: UIView, constraints: (MapCenterPointImageView) -> ()) {
     self.init(image: UIImage(named: "CenterPointIcon"))
     superview.addSubview(self)
     constraints(self)

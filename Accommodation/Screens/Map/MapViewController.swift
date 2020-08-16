@@ -28,7 +28,7 @@ class MapViewController: UIViewController {
   func makeCenterPointImageView() {
     guard let mapView = self.mapView else { return }
     
-    self.centerPointImageView = CenterPointImageView(superview: mapView) { imageView in
+    self.centerPointImageView = MapCenterPointImageView(superview: mapView) { imageView in
       imageView.snp.makeConstraints { $0.center.equalToSuperview() }
     }
   }
