@@ -10,7 +10,7 @@ import UIKit
 
 class MapCenterPointImageView: UIImageView {
   convenience init(superview: UIView, constraints: (MapCenterPointImageView) -> ()) {
-    self.init(image: UIImage(named: "CenterPointIcon"))
+    self.init(image: UIImage(named: "MapCenterPointIcon"))
     superview.addSubview(self)
     constraints(self)
   }
