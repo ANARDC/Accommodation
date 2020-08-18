@@ -17,6 +17,15 @@ class MapViewController: UIViewController {
   var nextButton              : NextButton?
   var mapLocationButton       : MapLocationButton?
   
+  var card: CardViewController?
+  var cardViewHeight: CGFloat {
+    UIScreen.main.bounds.height - 200
+  }
+  
+  var cardAnimations: CardAnimations {
+    CardAnimations(view: self.view, card: self.card)
+  }
+  
   var mapLocationButtonDriver: Driver<Void>? { self.mapLocationButton?.rx.tap.asDriver() }
   var mapCenterPointNameSubject = PublishSubject<String>()
   
@@ -33,6 +42,7 @@ class MapViewController: UIViewController {
     
     self.makeMapLocationButtonDriverSubscriber()
     self.makeMapCenterPointNameSubscriber()
+    self.makeNextButtonSubscriber()
   }
 }
 
@@ -58,9 +68,9 @@ extension MapViewController {
     
     self.mapPointNameLabel = MapPointNameLabel(superview: mapView) { label in
       label.snp.makeConstraints { maker in
-        maker.top.equalToSuperview().offset(40)
-        maker.left.equalToSuperview().offset(30)
-        maker.right.equalToSuperview().offset(-30)
+        maker.top.equalTo(40)
+        maker.left.equalTo(30)
+        maker.right.equalTo(-30)
         maker.bottom.lessThanOrEqualTo(mapCenterPointImageView.snp.top).offset(-30)
       }
     }
@@ -71,9 +81,9 @@ extension MapViewController {
     
     self.nextButton = NextButton(superview: mapView) { button in
       button.snp.makeConstraints { maker in
-        maker.bottom.equalToSuperview().offset(-25)
-        maker.left.equalToSuperview().offset(10)
-        maker.right.equalToSuperview().offset(-10)
+        maker.bottom.equalTo(-25)
+        maker.left.equalTo(10)
+        maker.right.equalTo(-10)
         maker.height.equalTo(50)
       }
     }
@@ -84,11 +94,30 @@ extension MapViewController {
     
     self.mapLocationButton = MapLocationButton(superview: mapView) { button in
       button.snp.makeConstraints { maker in
-        maker.left.equalTo(mapView).offset(20)
+        maker.left.equalTo(20)
         maker.bottom.equalTo(nextButton.snp.top).offset(-20)
         maker.height.width.equalTo(30)
       }
     }
+  }
+  
+  func makeCard() {
+    self.card = CardViewController()
+    
+    guard let card = self.card else { return }
+    
+    self.addChild(card)
+    self.view.addSubview(card.view)
+    card.view.frame = CGRect(x: 0,
+                             y: self.view.frame.height - self.cardViewHeight,
+                             width: self.view.bounds.width,
+                             height: self.cardViewHeight)
+    
+    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.cardHandleTap(recognizer:)))
+    
+    card.handleArea?.addGestureRecognizer(tapGestureRecognizer)
+    
+    self.cardAnimations.cardRunningAnimation = nil
   }
 }
 
@@ -96,17 +125,37 @@ extension MapViewController {
 extension MapViewController {
   func makeMapLocationButtonDriverSubscriber() {
     self.mapLocationButtonDriver?
-      .drive(onNext: { self.mapView?.locateMapCamera() })
+      .drive(onNext: { [unowned self] in self.mapView?.locateMapCamera() })
       .disposed(by: self.bag)
   }
   
   func makeMapCenterPointNameSubscriber() {
     self.mapCenterPointNameSubject
-      .subscribe(onNext: { pointName in
+      .subscribe(onNext: { [unowned self] pointName in
         DispatchQueue.main.async {
           self.mapPointNameLabel?.text = pointName
         }
       })
       .disposed(by: self.bag)
+  }
+  
+  func makeNextButtonSubscriber() {
+    self.nextButton?.rx.tap
+      .subscribe(onNext: { [unowned self] in
+        self.makeCard()
+      })
+      .disposed(by: self.bag)
+  }
+}
+
+// MARK: - Card
+extension MapViewController {
+  @objc func cardHandleTap(recognizer: UITapGestureRecognizer) {
+    switch recognizer.state {
+      case .ended:
+        self.cardAnimations.cardAnimateTransitionIfNeeded(duration: 0.9)
+      default:
+        break
+    }
   }
 }

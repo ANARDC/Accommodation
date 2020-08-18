@@ -17,12 +17,29 @@
 		993DB8D524E97BEC00571472 /* MapPointNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DB8D424E97BEC00571472 /* MapPointNameLabel.swift */; };
 		993DB8D724E9C5E700571472 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DB8D624E9C5E700571472 /* NextButton.swift */; };
 		993DB8D924E9C5FD00571472 /* WhereButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DB8D824E9C5FD00571472 /* WhereButton.swift */; };
+		993DB8DE24EA4D8800571472 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DB8DD24EA4D8800571472 /* CardViewController.swift */; };
+		993DB8E024EA50CE00571472 /* CardAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DB8DF24EA50CE00571472 /* CardAnimations.swift */; };
+		993DB8E224EA544000571472 /* CustomIntensityVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DB8E124EA544000571472 /* CustomIntensityVisualEffectView.swift */; };
+		993DB8EA24EA76F800571472 /* HandleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DB8E924EA76F800571472 /* HandleArea.swift */; };
+		994B36A024EB0666008BE7A7 /* DurationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B369F24EB0666008BE7A7 /* DurationPage.swift */; };
+		994B36A224EB0675008BE7A7 /* Accommodation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B36A124EB0675008BE7A7 /* Accommodation.swift */; };
+		994B36A424EB071A008BE7A7 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B36A324EB071A008BE7A7 /* Sex.swift */; };
+		994B36A624EB0730008BE7A7 /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B36A524EB0730008BE7A7 /* Age.swift */; };
+		994B36A824EB1647008BE7A7 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B36A724EB1647008BE7A7 /* Weight.swift */; };
+		994B36AA24EB164F008BE7A7 /* Hobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B36A924EB164F008BE7A7 /* Hobby.swift */; };
+		994B36AC24EB17E9008BE7A7 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B36AB24EB17E9008BE7A7 /* Duration.swift */; };
+		994B36AE24EB1CCB008BE7A7 /* MapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B36AD24EB1CCB008BE7A7 /* MapPoint.swift */; };
 		996F830224E95CE60055EF86 /* MapLocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F830124E95CE60055EF86 /* MapLocationButton.swift */; };
 		997887A624E5B37700EBD2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997887A524E5B37700EBD2B3 /* AppDelegate.swift */; };
 		997887A824E5B37700EBD2B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997887A724E5B37700EBD2B3 /* SceneDelegate.swift */; };
 		997887AA24E5B37700EBD2B3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997887A924E5B37700EBD2B3 /* MapViewController.swift */; };
 		997887AF24E5B37A00EBD2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997887AE24E5B37A00EBD2B3 /* Assets.xcassets */; };
 		997887B224E5B37A00EBD2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997887B024E5B37A00EBD2B3 /* LaunchScreen.storyboard */; };
+		99A1C53F24EB03AA004EB442 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1C53E24EB03AA004EB442 /* MainPage.swift */; };
+		99A1C54124EB03B9004EB442 /* WeightPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1C54024EB03B9004EB442 /* WeightPage.swift */; };
+		99A1C54324EB03C8004EB442 /* AgePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1C54224EB03C8004EB442 /* AgePage.swift */; };
+		99A1C54524EB03D3004EB442 /* SexPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1C54424EB03D3004EB442 /* SexPage.swift */; };
+		99A1C54724EB0410004EB442 /* HobbyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1C54624EB0410004EB442 /* HobbyPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +53,18 @@
 		993DB8D424E97BEC00571472 /* MapPointNameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointNameLabel.swift; sourceTree = "<group>"; };
 		993DB8D624E9C5E700571472 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		993DB8D824E9C5FD00571472 /* WhereButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereButton.swift; sourceTree = "<group>"; };
+		993DB8DD24EA4D8800571472 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		993DB8DF24EA50CE00571472 /* CardAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAnimations.swift; sourceTree = "<group>"; };
+		993DB8E124EA544000571472 /* CustomIntensityVisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIntensityVisualEffectView.swift; sourceTree = "<group>"; };
+		993DB8E924EA76F800571472 /* HandleArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleArea.swift; sourceTree = "<group>"; };
+		994B369F24EB0666008BE7A7 /* DurationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPage.swift; sourceTree = "<group>"; };
+		994B36A124EB0675008BE7A7 /* Accommodation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accommodation.swift; sourceTree = "<group>"; };
+		994B36A324EB071A008BE7A7 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
+		994B36A524EB0730008BE7A7 /* Age.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Age.swift; sourceTree = "<group>"; };
+		994B36A724EB1647008BE7A7 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		994B36A924EB164F008BE7A7 /* Hobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobby.swift; sourceTree = "<group>"; };
+		994B36AB24EB17E9008BE7A7 /* Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		994B36AD24EB1CCB008BE7A7 /* MapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoint.swift; sourceTree = "<group>"; };
 		996F830124E95CE60055EF86 /* MapLocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationButton.swift; sourceTree = "<group>"; };
 		997887A224E5B37700EBD2B3 /* Accommodation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accommodation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997887A524E5B37700EBD2B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +73,11 @@
 		997887AE24E5B37A00EBD2B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		997887B124E5B37A00EBD2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		997887B324E5B37A00EBD2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A1C53E24EB03AA004EB442 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		99A1C54024EB03B9004EB442 /* WeightPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPage.swift; sourceTree = "<group>"; };
+		99A1C54224EB03C8004EB442 /* AgePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePage.swift; sourceTree = "<group>"; };
+		99A1C54424EB03D3004EB442 /* SexPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexPage.swift; sourceTree = "<group>"; };
+		99A1C54624EB0410004EB442 /* HobbyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyPage.swift; sourceTree = "<group>"; };
 		A0C494E3070F59D09C0F786D /* Pods-Accommodation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accommodation.release.xcconfig"; path = "Target Support Files/Pods-Accommodation/Pods-Accommodation.release.xcconfig"; sourceTree = "<group>"; };
 		A37EC70892239217CEA39D20 /* Pods_Accommodation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accommodation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +101,37 @@
 				A0C494E3070F59D09C0F786D /* Pods-Accommodation.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		993DB8DA24E9EDA200571472 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				993DB8DD24EA4D8800571472 /* CardViewController.swift */,
+				993DB8E824EA76DA00571472 /* Pages */,
+				993DB8E724EA76CA00571472 /* Views */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		993DB8E724EA76CA00571472 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				993DB8E924EA76F800571472 /* HandleArea.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		993DB8E824EA76DA00571472 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				99A1C53E24EB03AA004EB442 /* MainPage.swift */,
+				99A1C54424EB03D3004EB442 /* SexPage.swift */,
+				99A1C54024EB03B9004EB442 /* WeightPage.swift */,
+				99A1C54224EB03C8004EB442 /* AgePage.swift */,
+				99A1C54624EB0410004EB442 /* HobbyPage.swift */,
+				994B369F24EB0666008BE7A7 /* DurationPage.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		9978879924E5B37700EBD2B3 = {
@@ -114,6 +179,7 @@
 		997887BA24E5B60900EBD2B3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				993DB8E124EA544000571472 /* CustomIntensityVisualEffectView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -122,6 +188,13 @@
 			isa = PBXGroup;
 			children = (
 				9936F9CC24E8378200306DE2 /* YandexGeoResponse.swift */,
+				994B36A124EB0675008BE7A7 /* Accommodation.swift */,
+				994B36A324EB071A008BE7A7 /* Sex.swift */,
+				994B36A524EB0730008BE7A7 /* Age.swift */,
+				994B36A724EB1647008BE7A7 /* Weight.swift */,
+				994B36A924EB164F008BE7A7 /* Hobby.swift */,
+				994B36AB24EB17E9008BE7A7 /* Duration.swift */,
+				994B36AD24EB1CCB008BE7A7 /* MapPoint.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -139,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				997887BE24E6EAA800EBD2B3 /* Map */,
+				993DB8DA24E9EDA200571472 /* Card */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -149,6 +223,7 @@
 				99B54B5724E9686C00E4183C /* Views */,
 				997887A924E5B37700EBD2B3 /* MapViewController.swift */,
 				9936F9CE24E8A4CC00306DE2 /* MapViewCameraListener.swift */,
+				993DB8DF24EA50CE00571472 /* CardAnimations.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -307,18 +382,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				993DB8D324E971ED00571472 /* MapService.swift in Sources */,
+				994B36A024EB0666008BE7A7 /* DurationPage.swift in Sources */,
+				994B36AA24EB164F008BE7A7 /* Hobby.swift in Sources */,
 				9936F9CF24E8A4CC00306DE2 /* MapViewCameraListener.swift in Sources */,
 				9936F9D124E8B17F00306DE2 /* Geocoder.swift in Sources */,
 				997887AA24E5B37700EBD2B3 /* MapViewController.swift in Sources */,
 				9936F9CD24E8378200306DE2 /* YandexGeoResponse.swift in Sources */,
+				993DB8E024EA50CE00571472 /* CardAnimations.swift in Sources */,
+				99A1C54524EB03D3004EB442 /* SexPage.swift in Sources */,
 				993DB8D524E97BEC00571472 /* MapPointNameLabel.swift in Sources */,
+				99A1C54124EB03B9004EB442 /* WeightPage.swift in Sources */,
 				993DB8D724E9C5E700571472 /* NextButton.swift in Sources */,
 				9936F9CB24E72FD300306DE2 /* MapView.swift in Sources */,
+				993DB8DE24EA4D8800571472 /* CardViewController.swift in Sources */,
 				993DB8D924E9C5FD00571472 /* WhereButton.swift in Sources */,
+				99A1C53F24EB03AA004EB442 /* MainPage.swift in Sources */,
 				997887A624E5B37700EBD2B3 /* AppDelegate.swift in Sources */,
+				994B36AE24EB1CCB008BE7A7 /* MapPoint.swift in Sources */,
+				99A1C54724EB0410004EB442 /* HobbyPage.swift in Sources */,
+				993DB8EA24EA76F800571472 /* HandleArea.swift in Sources */,
 				9936F9D524E9599100306DE2 /* MapCenterPointImageView.swift in Sources */,
 				997887A824E5B37700EBD2B3 /* SceneDelegate.swift in Sources */,
+				994B36AC24EB17E9008BE7A7 /* Duration.swift in Sources */,
+				994B36A424EB071A008BE7A7 /* Sex.swift in Sources */,
+				993DB8E224EA544000571472 /* CustomIntensityVisualEffectView.swift in Sources */,
+				99A1C54324EB03C8004EB442 /* AgePage.swift in Sources */,
+				994B36A624EB0730008BE7A7 /* Age.swift in Sources */,
+				994B36A224EB0675008BE7A7 /* Accommodation.swift in Sources */,
 				996F830224E95CE60055EF86 /* MapLocationButton.swift in Sources */,
+				994B36A824EB1647008BE7A7 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

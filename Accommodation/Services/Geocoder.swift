@@ -20,8 +20,11 @@ class Geocoder {
       
       if let response = yandexGeoResponse.response, let pointName = response.GeoObjectCollection.featureMember.first {
         closure(pointName.debugDescription)
+        
+        Accommodation.location = MapPoint(latitude: point.latitude,
+                                          longitude: point.longitude)
       } else {
-        closure("¯\\_(ツ)_/¯")
+        closure(#"¯\_(ツ)_/¯"#)
       }
     }.resume()
   }
