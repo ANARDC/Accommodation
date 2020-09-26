@@ -24,6 +24,7 @@ class MapService: NSObject {
   private func makeLocationManager() {
     self.locationManager.delegate = self
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+    self.locationManager.requestWhenInUseAuthorization()
     self.locationManager.startUpdatingLocation()
   }
 }
